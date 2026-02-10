@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-color: #FFE4B2; 
+}
+
+#banner {
+	background-image: url('images/background-img.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+
+@font-face {
+	font-family: titleFont;
+	src: url("fonts/tangerine.ttf");
+}
+
+@font-face {
+	font-family: navBarFont;
+	src: url("fonts/reeniebeanie.ttf");
+}
+
+@font-face {
+	font-family: mainFont;
+	src: url("fonts/gaegu.ttf");
+}
+
+#scrollBtn {
+	font-family: mainFont;
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 650px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	background-color: #2E4024;
+	color: #FFE4B2;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 12px;
+}
+
+#scrollBtn:hover {
+	background-color: #F08080;
+}
+
+h1 {
+	font-family: titleFont;
+	font-size: 160px;
+	color: #FFE4B2;
+	text-align: right;
+	margin: 0px;
+	padding-top: 60px;
+	padding-right: 50px;
+	height: 47vh;
+}
+
+h2 {
+	text-align: center;
+	font-family: mainFont;
+	font-size: 35px;
+	color: #F08080;
+}
+
+h3 {
+	font-family: mainFont;
+	font-size: 25px;
+	color: #F08080;
+	text-align: center;
+}
+
+ul {
+	font-family: navBarFont;
+	font-size: 18pt;
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #2E4024;
+}
+
+li {
+	float: left;
+}
+
+li a {
+  	display: block;
+  	color: #FFE4B2;;
+  	text-align: center;
+  	padding: 14px 15px;
+  	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111111;
+}
+
+.active {
+	background-color: #F08080;
+}
+
+table {
+	border: none;
+	width: 96%;
+}
+	
+table.center {
+	margin-left: auto; 
+	margin-right: auto;
+}
+	
+td {
+	padding-right: 8px;
+	font-family: mainFont;
+	font-size: 38pt;
+	color: #2E4024;
+	text-align: center;
+}
+
+tr td a:link{
+  	color: #FFE4B2;
+  	background-color: #2E4024; 
+  	padding: 14px 25px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	border-radius: 12px;
+}
+
+tr td a:hover{
+  	background-color: #F08080;
+  	color: #FFE4B2;
+}
+
+tr td a:visited {
+  	color: #FFE4B2;
+}
+
+.dropdown {
+	position: relative;
+  	display: inline-block;
+	cursor: pointer;
+}
+
+.dropdown-content {
+	display: none;
+  	position: absolute;
+	background-color: #FFE4B2;
+	border-radius: 12px;
+	border: 1px solid #2E4024;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.desc {
+	padding: 15px;
+	font-family: mainFont;
+	font-size: 15pt;
+	text-align: center;
+}
+
+footer {
+	background-color: #2E4024;
+	height: 150px;
+	padding: 10px;
+	text-align: center;
+	font-family: navBarFont;
+	font-size: 26pt;
+	color: #FFE4B2;
+}
+  	

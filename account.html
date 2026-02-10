@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>What Can I Get For You? - My Account</title>
+		<style>
+			body {
+				background-color: #FFE4B2; 
+			}
+
+			#banner {
+				background-image: url('images/background-img.jpg');
+				background-size: cover;
+				background-attachment: fixed;
+				background-position: top;
+			}
+
+			@font-face {
+				font-family: titleFont;
+				src: url("fonts/tangerine.ttf");
+			}
+
+			@font-face {
+				font-family: navBarFont;
+				src: url("fonts/reeniebeanie.ttf");
+			}
+
+			@font-face {
+				font-family: mainFont;
+				src: url("fonts/gaegu.ttf");
+			}
+
+			h1 {
+				font-family: titleFont;
+				font-size: 160px;
+				color: #FFE4B2;
+				text-align: right;
+				margin: 0px;
+				padding-top: 60px;
+				padding-right: 50px;
+				height: 47vh;
+			}
+
+			h2 {
+				text-align: center;
+				font-family: mainFont;
+				font-size: 35px;
+				color: #F08080;
+			}
+
+			ul {
+				font-family: navBarFont;
+				font-size: 18pt;
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #2E4024;
+			}
+
+			li {
+				float: left;
+			}
+
+			li a {
+				display: block;
+				color: #FFE4B2;;
+				text-align: center;
+				padding: 14px 15px;
+				text-decoration: none;
+			}
+
+			li a:hover {
+				background-color: #111111;
+			}
+
+			.active {
+				background-color: #F08080;
+			}
+
+			fieldset {
+				background-color: #F08080;
+				border-radius: 12px;
+				border: none;
+				margin-left: auto; 
+				margin-right: auto;
+				width: 50%;
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			input {
+				background-color: #FFE4B2;
+				margin: 5px;
+				padding: 5px;
+				width: calc(100% - 240px); 
+				box-sizing: border-box; 
+				text-align: center;
+			}
+
+			label {
+				font-family: mainFont;
+				text-align: center;
+				width: 90px; 
+				margin-right: 10px; 
+			}
+
+			footer {
+				text-align: center;
+				padding: 10px;
+				background-color: #2E4024;
+				font-size: 25pt;
+				color: #FFE4B2;
+				font-family: navBarFont;
+			}
+	</style>
+	</head>
+	
+	<body>
+		<div id="banner">
+			<h1>What Can I<br>Get For You?</h1>
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href= "cocktailGen.html">Cocktail Generator</a></li>
+			<li><a href="recipes.html">Recipes</a></li>
+			<li><a href="storeLoc.html">Liquor Store Locator</a></li>
+			<li><a href="barLoc.html">Bar Locator</a></li>
+			<li><a href="alcInfo.html">Alcohol Info</a></li>
+			<li style="float: right"><a class="active" href="account.html">My Account</a></li>
+		</ul>
+		
+		<br>
+		
+		<h2>Create your account here!</h2>
+		
+		<fieldset>
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname"><br><br>
+			  
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname"><br><br>
+			  
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email"><br><br>
+			  
+			<label for="birthday">Birthday:</label>
+			<input type="date" id="birthday" name="birthday"><br><br>
+			
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username"><br><br>
+			  
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br><br>
+			  
+			<a style="width: 50px; text-align: center; font-family: mainFont; color: #000000; 
+					  background-color: #FFE4B2; border-radius: 12px; text-align: center; 
+					  padding: 14px 15px; text-decoration: none;" href="accountInfo.html">
+				Submit
+			</a>
+		</fieldset>
+		
+		<br><br>
+		
+		<footer>
+			<p>
+				Website by Georgia Dwyer
+			</p>
+			<p style="font-size: 16pt">
+				Images by Alvin Dovicto
+			</p>
+		</footer>
+	
+	</body>
+</html>

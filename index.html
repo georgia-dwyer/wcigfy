@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>What Can I Get For You? - Home</title>
+	<style type="text/css" media="all">@import "master.css";</style>
+</head>
+
+	
+<body>
+	<div id="banner">
+		<h1>What Can I<br>Get For You?</h1>
+	</div>
+	
+	<!-- Create navbar -->
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href= "cocktailGen.html">Cocktail Generator</a></li>
+		<li><a href="recipes.html">Recipes</a></li>
+		<li><a href="storeLoc.html">Liquor Store Locator</a></li>
+		<li><a href="barLoc.html">Bar Locator</a></li>
+		<li><a href="alcInfo.html">Alcohol Info</a></li>
+		<li style="float: right"><a href="account.html">My Account</a></li>
+	</ul>
+	
+	<button onclick="topFunction()" id="scrollBtn" title="Go to top">Back to Top</button>
+	
+	<table class="center">
+		<tr>
+			<td style="background-image: url('images/subHeadBackground.png'); background-repeat: no-repeat; background-size: contain; background-position: center;">
+				<img style="height: 715px" src="images/cheers.png" alt="" title="" />
+			</td>
+			<td>
+				<br>WELCOME TO<br>
+				<strong style="font-family: titleFont; color: #F08080; font-size: 90pt;">What Can I Get For You?</strong><br>
+				<p style="font-family: mainFont; font-size: 22pt;">Your one stop directory for everything alcohol</p>
+				<br><br>
+			</td>
+		</tr>
+	</table>
+	
+	<table class="center" style="width: 90%; background-image: url('images/tableBackground1.png'); background-repeat: no-repeat;
+								 background-size: cover; background-position: top;">
+		<tr>
+			<td><br><br><img style="height: 280px" src="images/drink1-img.png" alt="" title=""/></td>
+    		<td><img style="height: 340px" src="images/drink2-img.png" alt="" title=""/></td>
+			<td><br><br><img style="height: 290px" src="images/drink3-img.png" alt="" title=""/></td>
+  		</tr>
+		<tr>
+			<td style="font-size: 16pt; text-align: center;">
+				Not sure which cocktail you want<br>to get at the bar?<br><br>
+				Click below to discover the<br>world of cocktails!<br><br>
+			</td>
+    		<td style="font-size: 16pt; text-align: center;">
+				Wanna learn how to make cocktails?<br><br>
+				Click below for some recipes!<br><br>
+			</td>
+			<td style="font-size: 16pt; text-align: center;">
+				Unsure what you're drinking?<br><br>
+				Click below to learn about<br>what's in your drink!<br><br>
+			</td>
+  		</tr>		
+  		<tr>
+			<td style="font-size: 20pt; padding-bottom: 60px;"><a href="cocktailGen.html">Cocktail</a></td>
+			<td style="font-size: 20pt; padding-bottom: 60px;"><a href="recipes.html">Recipes</a></td>
+			<td style="font-size: 20pt; padding-bottom: 60px;"><a href="alcInfo.html">Alcohol Info</a></td>
+  		</tr>
+	</table>
+	
+	<br><br>
+	
+	<footer>
+		<p>
+			Website by Georgia Dwyer
+  		</p>
+		<p style="font-size: 16pt">
+			Images by Alvin Dovicto
+		</p>
+	</footer>
+
+	<script>
+		let mybutton = document.getElementById("scrollBtn");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+	
+</body>
+</html>
